@@ -1,0 +1,1 @@
+code in this repository is currently been updated to complete a full featured real estate project having some aweasome features like lightbox and searching mechanism which just some insight of this project but still a much to go.
