@@ -34,6 +34,7 @@ state_choices = {
     'BB': 'bombay',
     'KK': 'kolkata',
     'CH': 'cheenai',
-    'PU': 'pune'
+    'PU': 'pune',
+    'OD': 'Odisha'
 
 }

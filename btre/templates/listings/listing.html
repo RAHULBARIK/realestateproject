@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 {% load humanize %}
+{% block title %} |{{ listing.title }} {% endblock %}
+
 {% block content %}
             <section id="showcase-inner" class="py-5 text-white">
             <div class="container">
@@ -8,7 +10,7 @@
                 <h1 class="display-4">{{ listing.title }}</h1>
                 <p class="lead">
                     <i class="fas fa-map-marker"></i>
-                    {{ listing.city  }}{{ listing.state }}{{ listing.zipcode }} </p>
+                    {{ listing.city  }} {{ listing.state }} {{ listing.zipcode }} </p>
                 </div>
             </div>
             </div>

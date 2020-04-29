@@ -1,5 +1,6 @@
 from django.contrib import admin
 from .models import Listing
+from django.contrib.auth.models import Group
 
 
 class ListingAdmin(admin.ModelAdmin):
@@ -14,5 +15,6 @@ class ListingAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Listing, ListingAdmin)
+admin.site.unregister(Group)
 
 # Register your models here.
