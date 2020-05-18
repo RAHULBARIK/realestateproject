@@ -1,5 +1,5 @@
-{% extends 'base.html' %} {% load humanize %} {% block title %} |{{
-listing.title }} {% endblock %} {% block content %}
+{% extends 'base.html' %} {% load humanize %} {% block title %} |
+{{listing.title }} {% endblock %} {% block content %}
 <section id="showcase-inner" class="py-5 text-white">
   <div class="container">
     <div class="row text-center">
@@ -171,7 +171,10 @@ listing.title }} {% endblock %} {% block content %}
         </button>
       </div>
       <div class="modal-body">
-        <form actions="{% url 'contact' %}" method="POST">
+        <!-- In the form tag we need to give action of form where all the data should go -->
+        <!-- Now whenever the form method is post then we need secure the form with the csrf_token -->
+        <!-- to check whether the user is logged in or not we need to give conditional that is if user.is_authenticated to check whether the user is logged in or not -->
+        <form action="{% url 'contact' %}" method="POST">
           {% csrf_token %} {% if user.is_authenticated %}
           <input type="hidden" name="user_id" value="{{ user.id }}" />
           {% else %}
@@ -202,7 +205,7 @@ listing.title }} {% endblock %} {% block content %}
               if
               user.is_authenticated
               %}
-              value="{{ user.first_name }}  {{ user.last_name }}"
+              value="{{ user.first_name }} {{ user.last_name }}"
               {%
               endif
               %}

@@ -23,18 +23,19 @@ price_choices = {
     '1000000': '10,00,000RS+'
 }
 state_choices = {
-    'KA': 'Kalpana',
-    'RM': 'Raj mahal',
-    'RP': 'Raj path',
-    'AP': 'airport',
-    'OD': 'old town',
-    'RB': 'Rabi talkies',
-    'CU': 'cuttack',
-    'DE': 'Delhi',
-    'BB': 'bombay',
-    'KK': 'kolkata',
-    'CH': 'cheenai',
-    'PU': 'pune',
-    'OD': 'Odisha'
+    'Kalpana': 'Kalpana',
+    'Raj mahal': 'Raj mahal',
+    'Raj path': 'Raj path',
+    'airport': 'airport',
+    'old town': 'old town',
+    'Rabi talkies': 'Rabi talkies',
+    'cuttack': 'cuttack',
+    'Delhi': 'Delhi',
+    'bombay': 'bombay',
+    'kolkata': 'kolkata',
+    'cheenai': 'cheenai',
+    'pune': 'pune',
+    'Odisha': 'Odisha',
+    'Goa': 'Goa'
 
 }

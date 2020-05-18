@@ -44,6 +44,7 @@ def search(request):
         city = request.GET['city']
         if city:
             queryset_list = queryset_list.filter(city__iexact=city)
+            # city__iexact is case insenstive search that city__iexact city is the type whom i want to search and iexact is type of search in which match should be a exact but it also can be an insensitive match
 
     # State
     if 'state' in request.GET:
@@ -67,6 +68,8 @@ def search(request):
         'state_choices': state_choices,
         'bedroom_choices': bedroom_choices,
         'price_choices': price_choices,
-        'listings': queryset_list
+        'listings': queryset_list,
+        'values': request.GET
+        # To preserve the form input we need to make a separate key-value key is referred to values and values to request.GET in search form simiplier data can be access through {{ values.keywords }} etc.
     }
     return render(request, 'listings/search.html', context)
