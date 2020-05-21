@@ -138,14 +138,7 @@ MEDIA_URL = '/media/'
 MESSAGE_TAGS = {
     messages.ERROR: 'danger',
 }
-# Email configuration that are necessary to set up gmail system in our projects
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'rahulbarik583@gmail.com'
-EMAIL_HOST_PASSWORD = 'nohiiqojthdmopgd'
-EMAIL_USE_TLS = True
-EMAIL_USE_SSL = False
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
 
 try:
     from .local_settings import *
